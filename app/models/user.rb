@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
     end
   end
 
-  after_create :send_welcome_emails
+  # after_create :send_welcome_emails
 
   def display_name
     first_name.presence || email.split('@')[0]
@@ -56,8 +56,8 @@ class User < ActiveRecord::Base
     false
   end
 
-  def send_welcome_emails
-    UserMailer.delay.welcome_email(self.id)
-    # UserMailer.delay_for(5.days).find_more_friends_email(self.id)
-  end
+  # def send_welcome_emails
+  #   UserMailer.delay.welcome_email(self.id)
+  #   # UserMailer.delay_for(5.days).find_more_friends_email(self.id)
+  # end
 end

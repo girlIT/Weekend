@@ -13,7 +13,7 @@ gem 'terminal-notifier', group: [:development]
 # LINUX
 # gem 'rb-inotify', :group => [:development, :test]   # monitor file changes without hammering the disk
 
-
+gem 'redis'
 
 # Monitoring
 gem 'rack-timeout', '~> 0.1.0beta3'
@@ -64,6 +64,8 @@ gem 'omniauth-twitter'
 # gem 'omniauth-persona'
 # gem 'omniauth-google-oauth2'
 # gem 'omniauth-linkedin'
+
+
 
 # Admin
 gem 'rails_admin'
